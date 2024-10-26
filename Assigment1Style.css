@@ -1,0 +1,266 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Container for responsiveness */
+.container {
+    max-width: 1200px;  /* Sets maximum width for large screens */
+    padding: 0 20px;    /* Padding for mobile screens */
+    margin: 0 auto;     /* Center content horizontally */
+}
+
+.main-container {
+    display: flex;
+    padding: 40px 0; /* Adjusted padding */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    align-items: flex-start; /* Ensure items align at the top */
+}
+
+/* Profile Bar Styling */
+#profile {
+    width: 30%;
+    background-color: #0d47a1; /* Dark Blue */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+#profile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+}
+
+#profile h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#profile p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Education Section */
+.education h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.education p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Skills Section */
+.skills h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills ul li {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-info h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: white;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links li {
+    transition: transform 0.3s ease;
+}
+
+.social-links a {
+    color: #bbdefb;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-links li:hover {
+    transform: scale(1.1);
+}
+
+.social-links a:hover {
+    color: #e3f2fd;
+}
+
+/* Projects Section */
+#projects {
+    flex: 1;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-left: 40px;
+}
+
+.project-one, .project-two, .project-three, .project-four, .project-five {
+    background-color: #e3f2fd;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.project-one:hover, .project-two:hover, .project-three:hover, .project-four:hover, .project-five:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-one h2, .project-two h2, .project-three h2, .project-four h2, .project-five h2 {
+    font-size: 24px;
+}
+
+.project-one p, .project-two p, .project-three p, .project-four p, .project-five p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.project-one a, .project-two a, .project-three a, .project-four a, .project-five a {
+    display: inline-block;
+    background-color: #1e88e5;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-one a:active, .project-two a:active, .project-three a:active, .project-four a:active, .project-five a:active {
+    transform: scale(0.95);
+}
+
+.project-one a:hover, .project-two a:hover, .project-three a:hover, .project-four a:hover, .project-five a:hover {
+    background-color: #1565c0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+/* Responsive Design for Tablets (768px and below) */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;  /* Stack profile and projects vertically */
+        padding: 20px;
+    }
+
+    #profile, #projects {
+        width: 100%; /* Make profile and projects take full width */
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+}
+
+/* Responsive Design for Small Screens (375px and below) */
+@media (max-width: 375px) {
+    #profile img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #profile h1 {
+        font-size: 24px;
+    }
+
+    #projects h2 {
+        font-size: 20px;
+    }
+
+    .project-one, .project-two, .project-three, .project-four, .project-five {
+        padding: 15px;
+    }
+    
+    .project-one p, .project-two p, .project-three p, .project-four p, .project-five p {
+        font-size: 14px;
+    }
+    
+    .project-one a, .project-two a, .project-three a, .project-four a, .project-five a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
